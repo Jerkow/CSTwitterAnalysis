@@ -17,5 +17,5 @@ def collect_by_user(user_id):
         print(status.text)
     return statuses
 
-collect_by_user('@realDonaldTrump')
+collect_by_user('25073877')
 

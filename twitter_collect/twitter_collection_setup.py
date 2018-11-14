@@ -1,6 +1,10 @@
 import tweepy
 # We import our access keys:
-from twitter_collect.credentials import *
+import sys
+sys.path.insert(0, '../../')
+from credentials import *
+
+#from twitter_collect.credentials import *
 
 def twitter_setup():
     """
