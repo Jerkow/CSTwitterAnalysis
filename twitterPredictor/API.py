@@ -12,7 +12,7 @@ def collect(query):
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
-    statuses = connexion.user_timeline(id = user_id, count = 200, page =12)
+    statuses = connexion.user_timeline(id = user_id, count = 200, page =11)
     for status in statuses:
         print(status.text)
     return statuses
