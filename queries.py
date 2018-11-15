@@ -15,4 +15,4 @@ def get_candidate_queries(num_candidate, file_path, type):
 
 
 
-print(get_candidate_queries('n','CandidateData/','keywords'))
+#print(get_candidate_queries('n','CandidateData/','keywords'))

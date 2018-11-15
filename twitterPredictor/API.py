@@ -3,12 +3,12 @@ import tweepy
 
 def collect(query):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(q=str(query), language="french", rpp=100)
+    tweets = connexion.search(q=str(query[0]), language="french", rpp=100)
     for tweet in tweets:
         print(tweet.text)
 
 
-#collect('CentraleSupelec')
+collect(['Emmanuel OR Macron'])
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
@@ -39,4 +39,4 @@ def collect_by_streaming():
     stream=tweepy.Stream(auth = connexion.auth, listener=listener, language="french")
     stream.filter(track=['Emmanuel Macron'])
 
-collect_by_streaming()
+#collect_by_streaming()
