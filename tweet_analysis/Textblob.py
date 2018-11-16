@@ -1,9 +1,5 @@
 from textblob import TextBlob
-from textblob import Word
-from textblob.wordnet import VERB
-from textblob.wordnet import Synset
-import nltk
-from twitter_collect import Data
+
 """
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
@@ -189,10 +185,11 @@ def opinion(data):
             neu_tweets.append(tweet)
     return pos_tweets, neu_tweets, neg_tweets
 
+"""
 data = Data.collect_to_pandas_dataframe('@EmmanuelMacron')
 
 pos_tweets, neu_tweets, neg_tweets = opinion(data)
 print("Percentage of positive tweets: {}%".format(len(pos_tweets)*100/len(data['tweet_textual_content'])))
 print("Percentage of neutral tweets: {}%".format(len(neu_tweets)*100/len(data['tweet_textual_content'])))
 print("Percentage de negative tweets: {}%".format(len(neg_tweets)*100/len(data['tweet_textual_content'])))
-
+"""
