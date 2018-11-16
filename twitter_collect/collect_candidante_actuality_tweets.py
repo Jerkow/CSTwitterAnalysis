@@ -1,7 +1,7 @@
 import twitter_collect.twitter_collection_setup as connect
 import queries as q
 
-"""def get_tweets_from_candidates_search_queries(queries, twitter_api):
+def get_tweets_from_candidates_search_queries(queries, twitter_api):
     queries_str = queries[0]
     for query in queries[1:]:
         queries_str = queries_str + ' OR ' + query
@@ -10,10 +10,10 @@ import queries as q
     return(tweet_list)
 
 twitter_api = connect.twitter_setup()
-print(get_tweets_from_candidates_search_queries(['@EmmanuelMacron'], twitter_api))"""
+print(get_tweets_from_candidates_search_queries(['@EmmanuelMacron'], twitter_api)
 
 """
-On doit d'abord faire le lien entre le numméro du candidat et son compte twitter
+On doit d'abord faire le lien entre le numéro du candidat et son compte twitter
 On suppose quon a cette information dans un fichier texte sous la forme :
 num_candidat : @comptecandidat
 """
