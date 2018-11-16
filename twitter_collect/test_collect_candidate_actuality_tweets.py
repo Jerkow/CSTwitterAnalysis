@@ -1,4 +1,5 @@
 import twitter_collect as tc
-import tc.collect_candidate_actuality_tweets as ccat
+import twitter_collect.collect_candidante_actuality_tweets as ccat
 
-get_tweets_from_candidates_search_queries(['bjr'], twitter_api)
+def test():
+    assert ccat.get_candidates_accounts() == {'n': '@Emmanuelmacron'}
